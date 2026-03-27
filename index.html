@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nu-Trendz</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (REQUIRED FOR SOCIAL ICONS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="reviews.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Nu-Trendz</a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home-banner" class="active">Home</a></li>
+                <li><a href="#about-features">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#customer-reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/booking" class="nav-book-btn">Book Now</a></li>
+            </ul>
+
+            <div class="menu-icon" tabindex="0">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Floating Button -->
+    <a href="/booking" class="floating-book-btn">Book Now</a>
+
+    <!-- Home -->
+    <section id="home-banner">
+        <div class="hero-content">
+            <h1>Welcome to <span>Nu-Trendz</span></h1>
+            <p>Your destination for expert braiding, locs, and styling in Colchester.</p>
+
+            <div class="cta-buttons">
+                <a href="services.html" class="cta-btn">Explore Services</a>
+                <a href="shop.html" class="cta-btn">Visit Shop</a>
+                <a href="about.html" class="cta-btn">About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & FEATURES -->
+    <section id="about-features">
+        <div class="about-hero">
+            <h1>About <span>Nu-Trendz</span></h1>
+            <p>Founded in Colchester, Nu-Trendz is a modern salon specializing in Afro, natural, and protective hairstyling. We believe in enhancing beauty through healthy hair care, creativity, and confidence.</p>
+        </div>
+
+        <div class="feature-cards">
+            <div class="feature-card">
+                <div class="icon">❤️</div>
+                <h3>Our Mission</h3>
+                <p>To provide quality service and education while creating a community where everyone feels seen, valued, and stylish.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">👑</div>
+                <h3>Our Vision</h3>
+                <p>To empower people to express their individuality through exceptional hair artistry and care.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🤝</div>
+                <h3>Our Promise</h3>
+                <p>We combine expertise, creativity, and warmth to ensure every client leaves glowing — inside and out.</p>
+            </div>
+        </div>
+
+        <div class="our-work">
+            <h2>Our Work</h2>
+            <div class="work-gallery">
+                <div class="work-card">
+                    <img src="images/Natural Hair Styling.jpg" alt="Natural Hair Styling">
+                    <div class="work-overlay">Natural Hair Styling</div>
+                </div>
+                <div class="work-card">
+                    <img src="images/Professional Hair Care.jpg" alt="Professional Hair Care">
+                    <div class="work-overlay">Professional Hair Care</div>
+                </div>
+                <div class="work-card">
+                    <img src="images/Hair Treatment.jpg" alt="Hair Treatment">
+                    <div class="work-overlay">Hair Treatment</div>
+                </div>
+                <div class="work-card">
+                    <img src="images/Hair Styling Excellence.jpg" alt="Extensions Example">
+                    <div class="work-overlay">Extensions Example</div>
+                </div>
+                <div class="work-card">
+                    <img src="images/Premium Hair Care.jpg" alt="Premium Hair Care">
+                    <div class="work-overlay">Premium Hair Care</div>
+                </div>
+                <div class="work-card">
+                    <img src="images/Expert Hair Styling.jpg" alt="Expert Hair Styling">
+                    <div class="work-overlay">Expert Hair Styling</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox overlay -->
+        <div class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-img" src="" alt="">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </section>
+
+ <!-- SHOP SECTION -->
+  <section class="shop-section">
+    <!-- Header -->
+    <div class="shop-header">
+      <h2>Nu-Trendz Collection</h2>
+      <h3>Explore Our Latest Products</h3>
+      <p>Check out our curated products along with demonstration videos. Browse, click, and discover what makes Nu-Trendz unique!</p>
+    </div>
+
+    <!-- Content -->
+    <div class="shop-content">
+      <!-- Left - Videos -->
+      <div class="videos">
+        <div class="video-section">
+          <h2 class="highlight">Shop Experience</h2>
+          <p>Take a look inside our store — discover <span class="white-text">hair products</span>, wigs, and accessories.</p>
+          <iframe src="https://www.youtube.com/embed/Oq5hfc4Jqcw?enablejsapi=1&rel=0&modestbranding=1&playsinline=1" title="Nu-Trendz Shop Walkthrough" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-section">
+          <h2 class="highlight">Personal Assistance</h2>
+          <p>Watch our stylists help customers find their <span class="white-text">perfect wig</span> or <span class="white-text">ideal product</span>.</p>
+          <iframe src="https://www.youtube.com/embed/neqk3SqOjZQ?enablejsapi=1&rel=0&modestbranding=1&playsinline=1" title="Nu-Trendz Customer Experience" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Right - Products -->
+      <div class="products">
+        <div class="product-card"><img src="images/shoppic1.jpg" alt="Product 1"></div>
+        <div class="product-card"><img src="images/shoppic2.jpg" alt="Product 2"></div>
+        <div class="product-card"><img src="images/shoppic3.jpg" alt="Product 3"></div>
+        <div class="product-card"><img src="images/shoppic4.jpg" alt="Product 4"></div>
+        <div class="product-card"><img src="images/shoppic5.jpg" alt="Product 5"></div>
+        <div class="product-card"><img src="images/shoppic6.jpg" alt="Product 6"></div>
+        <div class="product-card"><img src="images/shoppic7.jpg" alt="Product 7"></div>
+        <div class="product-card"><img src="images/shoppic8.jpg" alt="Product 8"></div>
+        <div class="product-card"><img src="images/shoppic9.jpg" alt="Product 9"></div>
+        <div class="product-card"><img src="images/shoppic10.jpg" alt="Product 10"></div>
+
+        <div class="shop-subtext">Click on any product to view it larger or watch the videos for demos!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+  </div>
+
+    
+<!-- REVIEWS SECTION -->
+<section class="reviews" id="customer-reviews">
+  <div class="reviews-header">
+    <h2>⭐ Customer Reviews</h2>
+    <p>Real feedback from our clients (coming soon)</p>
+  </div>
+
+  <div class="review-preview">
+    <div class="avg-rating">
+      <h3>4.0</h3>
+      <div class="stars">★★★★★</div>
+      <p>Based on 70+ reviews</p>
+    </div>
+
+    <div class="review-cards">
+      <div class="card">
+        <div class="stars">★★★★☆</div>
+        <p>"Amazing energy & great braids!"</p>
+        <h4>— Client A</h4>
+      </div>
+      <div class="card">
+        <div class="stars">★★★★☆</div>
+        <p>"Good but appointment timing was tricky."</p>
+        <h4>— Client B</h4>
+      </div>
+      <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>"Very professional and friendly."</p>
+        <h4>— Client C</h4>
+      </div>
+    </div>
+
+    <a href="https://business.google.com/reviews/l/PLACEHOLDER" class="view-all">View All Reviews</a>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+  <div class="contact-container">
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <p>Have a question? Send us a message.</p>
+      <form action="https://formspree.io/f/mzdayayl" method="POST">
+        <!-- Honeypot (spam protection) -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <!-- Google reCAPTCHA -->
+        <div class="g-recaptcha" data-sitekey="6Let6nYsAAAAADfcOx04SEy9DnIYuYgBX2gTZR-L"></div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Business Info -->
+    <div class="contact-info">
+      <h3>Visit Us</h3>
+      <p>43 St Botolph`s St<br>Colchester, CO2 7EA</p>
+
+      <p><strong>Phone:</strong> 01206 123456</p>
+
+      <h4>Opening Hours</h4>
+      <ul>
+        <li>Mon - Fri: 9:30 AM - 7:00 PM</li>
+        <li>Saturday: 9:30 AM - 7:00 PM</li>
+        <li>Sunday: Closed</li>
+      </ul>
+
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps?q=Nu-Trendz+Hair+%26+Beauty+Salon+Colchester&output=embed"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2 class="footer-logo">NU-TRENDZ</h2>
+                <p class="footer-tagline">Redefining beauty, confidence & style.</p>
+            </div>
+
+            <div class="footer-center">
+                <ul class="footer-links">
+                    <li><a href="#home-banner">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <p>Follow us</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 NU-TRENDZ. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- Load Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="shop.js"></script>
+    <script src="reviews.js"></script>
+    <script src="about-us.js"></script>
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>
