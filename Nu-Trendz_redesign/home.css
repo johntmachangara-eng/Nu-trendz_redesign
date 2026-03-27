@@ -1,0 +1,170 @@
+/* ============================================================
+   HOME PAGE STYLES — NU-TRENDZ
+   ============================================================ */
+
+/* ===== ROOT VARIABLES ===== */
+:root {
+  --orange: #ff9800;
+  --orange-light: #ffb84d;
+  --border-light: #333;
+  --transition-fast: all 0.3s ease;
+}
+
+/* ===== HERO SECTION ===== */
+#home-banner {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35)),
+    url('images/home_bgi.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-content {
+  margin-top: 80px;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-content h1 span {
+  color: var(--orange);
+}
+
+.hero-content p {
+  margin: 20px auto;
+  font-size: 1.2rem;
+  color: #ddd;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* ===== CTA BUTTONS ===== */
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 280px;
+  max-width: 90%;
+  padding: 14px 0;
+  background-color: var(--orange);
+  color: #111;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 0 12px rgba(255, 152, 0, 0.25);
+  transition: var(--transition-fast);
+}
+
+.cta-btn:hover {
+  background-color: var(--orange-light);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 152, 0, 0.4);
+}
+
+.cta-btn .material-symbols-outlined {
+  font-size: 1.3rem;
+}
+
+/* ===== FEATURED SECTION ===== */
+#featured {
+  padding: 80px 10%;
+  background: #111;
+  text-align: center;
+}
+
+#featured h2 {
+  color: var(--orange);
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+/* ===== FEATURE CARDS ===== */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature-card {
+  background: #1a1a1a;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  width: clamp(280px, 22%, 300px);
+  padding: clamp(30px, 2.5vw, 40px);
+  text-align: center;
+  transition: var(--transition-fast);
+}
+
+.feature-card:hover {
+  border-color: var(--orange);
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 152, 0, 0.3);
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--orange);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 992px) {
+  .feature-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-buttons {
+    gap: 14px;
+  }
+
+  .cta-btn {
+    width: 80%;
+    max-width: 280px;
+    font-size: 1rem;
+  }
+
+  .feature-card {
+    width: 90%;
+    padding: 25px;
+  }
+}
