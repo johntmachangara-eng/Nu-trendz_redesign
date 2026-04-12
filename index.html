@@ -127,55 +127,78 @@
         </div>
     </section>
 
- <!-- SHOP SECTION -->
-  <section class="shop-section">
-    <!-- Header -->
-    <div class="shop-header">
-      <h2>Nu-Trendz Collection</h2>
-      <h3>Explore Our Latest Products</h3>
-      <p>Check out our curated products along with demonstration videos. Browse, click, and discover what makes Nu-Trendz unique!</p>
-    </div>
 
-    <!-- Content -->
-    <div class="shop-content">
-      <!-- Left - Videos -->
-      <div class="videos">
-        <div class="video-section">
-          <h2 class="highlight">Shop Experience</h2>
-          <p>Take a look inside our store — discover <span class="white-text">hair products</span>, wigs, and accessories.</p>
-          <iframe src="https://www.youtube.com/embed/Oq5hfc4Jqcw?enablejsapi=1&rel=0&modestbranding=1&playsinline=1" title="Nu-Trendz Shop Walkthrough" allowfullscreen></iframe>
-        </div>
 
-        <div class="video-section">
-          <h2 class="highlight">Personal Assistance</h2>
-          <p>Watch our stylists help customers find their <span class="white-text">perfect wig</span> or <span class="white-text">ideal product</span>.</p>
-          <iframe src="https://www.youtube.com/embed/neqk3SqOjZQ?enablejsapi=1&rel=0&modestbranding=1&playsinline=1" title="Nu-Trendz Customer Experience" allowfullscreen></iframe>
-        </div>
-      </div>
+<!-- SHOP SECTION -->
+<section class="shop-section">
 
-      <!-- Right - Products -->
-      <div class="products">
-        <div class="product-card"><img src="images/shoppic1.jpg" alt="Product 1"></div>
-        <div class="product-card"><img src="images/shoppic2.jpg" alt="Product 2"></div>
-        <div class="product-card"><img src="images/shoppic3.jpg" alt="Product 3"></div>
-        <div class="product-card"><img src="images/shoppic4.jpg" alt="Product 4"></div>
-        <div class="product-card"><img src="images/shoppic5.jpg" alt="Product 5"></div>
-        <div class="product-card"><img src="images/shoppic6.jpg" alt="Product 6"></div>
-        <div class="product-card"><img src="images/shoppic7.jpg" alt="Product 7"></div>
-        <div class="product-card"><img src="images/shoppic8.jpg" alt="Product 8"></div>
-        <div class="product-card"><img src="images/shoppic9.jpg" alt="Product 9"></div>
-        <div class="product-card"><img src="images/shoppic10.jpg" alt="Product 10"></div>
-
-        <div class="shop-subtext">Click on any product to view it larger or watch the videos for demos!</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LIGHTBOX -->
-  <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-img" src="" alt="">
+  <!-- Header -->
+  <div class="shop-header">
+    <h2>NuTrendz Collection</h2>
+    <h3>Explore Our Latest Products</h3>
+    <p>Premium wigs, products & accessories — curated for you.</p>
   </div>
+
+  <!-- VIDEO BLOCKS -->
+  <div class="videos">
+
+    <!-- VIDEO 1 -->
+    <div class="video-section">
+      <h2 class="highlight">Shop Experience</h2>
+      <p>Take a look inside our store — discover <span class="white-text">hair products</span>, wigs, and accessories.</p>
+
+      <div class="video-wrapper">
+        <iframe class="shop-video"
+          src="https://www.youtube.com/embed/Oq5hfc4Jqcw?enablejsapi=1&rel=0&modestbranding=1&playsinline=1"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- VIDEO 2 -->
+    <div class="video-section">
+      <h2 class="highlight">Personal Assistance</h2>
+      <p>Watch our stylists help customers find their <span class="white-text">perfect wig</span> or <span class="white-text">ideal product</span>.</p>
+
+      <div class="video-wrapper">
+        <iframe class="shop-video"
+          src="https://www.youtube.com/embed/neqk3SqOjZQ?enablejsapi=1&rel=0&modestbranding=1&playsinline=1"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PRODUCT STRIP -->
+  <div class="collection-section">
+    <h2 class="highlight">Our Products</h2>
+    <p class="collection-subtext">Browse our curated selection — tap any item to view it closer.</p>
+
+    <div class="collection-scroll" id="collectionScroll">
+      <img src="images/shoppic1.jpg" class="collection-img" alt="">
+      <img src="images/shoppic2.jpg" class="collection-img" alt="">
+      <img src="images/shoppic3.jpg" class="collection-img" alt="">
+      <img src="images/shoppic4.jpg" class="collection-img" alt="">
+      <img src="images/shoppic5.jpg" class="collection-img" alt="">
+      <img src="images/shoppic6.jpg" class="collection-img" alt="">
+      <img src="images/shoppic7.jpg" class="collection-img" alt="">
+      <img src="images/shoppic8.jpg" class="collection-img" alt="">
+      <img src="images/shoppic9.jpg" class="collection-img" alt="">
+      <img src="images/shoppic10.jpg" class="collection-img" alt="">
+    </div>
+  </div>
+
+</section>
+
+<!-- PRODUCT LIGHTBOX -->
+<div id="product-lightbox" class="product-lightbox">
+  <span class="product-lightbox-close">&times;</span>
+  <img class="product-lightbox-img" src="" alt="">
+  <button class="product-lightbox-prev">&#10094;</button>
+  <button class="product-lightbox-next">&#10095;</button>
+</div>
+
+
+
 
     
 <!-- REVIEWS SECTION -->
@@ -301,6 +324,7 @@
 
 
     <!-- Load Google reCAPTCHA -->
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="shop.js"></script>
     <script src="reviews.js"></script>
